@@ -66,7 +66,10 @@ export function DropZone({ onFile }: DropZoneProps) {
           </p>
         </div>
 
-        <Button onClick={() => inputRef.current?.click()}>
+        <Button
+          onClick={() => inputRef.current?.click()}
+          className="bg-green-600 text-white hover:bg-green-700"
+        >
           <ImagePlusIcon data-icon="inline-start" />
           Choose image
         </Button>
